@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+docker run --rm -dv /workspaces/flowgorithm-codespace:/home/flowgorithm/Documents -p 8080:8080 ghcr.io/fhswf/flowgorithm-docker:1.0
