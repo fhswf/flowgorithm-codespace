@@ -1,0 +1,13 @@
+{
+    "features" : {
+        "ghcr.io/devcontainers/features/docker-in-docker:4" : {}
+    },
+    "forwardPorts" : [ 8080 ],
+    "portsAttributes" : {
+        "8080": {
+            "label" : "Flowgorithm",
+            "onAutoForward" : "openBrowser"
+        }
+    },
+    "postStartCommand": "docker run --rm -dv /workspaces/flowgorithm-codespace:/home/flowgorithm/Documents -p 8080:8080 ghcr.io/fhswf/flowgorithm-docker:1.0"
+}

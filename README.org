@@ -1,0 +1,2 @@
+* flowgorithm-codespace
+Codespace zur Nutzung von Flowgorithm im Browser.
