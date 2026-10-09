@@ -1,2 +1,25 @@
 * flowgorithm-codespace
 Codespace zur Nutzung von Flowgorithm im Browser.
+
+** Verwendung
+Über den Knopf /Code/ auf der Hauptseite dieses Repositorys kann ein neuer Codespace erzeugt oder ein vorhandener Codespace gestartet werden.
+
+Während der ersten Startsequenz erscheint ggf. ein Dialog, welcher bestätigt werden muss.
+
+Sobald der Codespace einsatzbereit ist, kann im Terminal das Skript zum Starten des Flowgorithm-Containers ausgeführt werden:
+#+begin_src bash
+./launch
+#+end_src
+Kurze Zeit später öffnet sich eine Popup-Benachrichtigung, die beim Anklicken einen neuen Tab mit einem VNC-Client öffnet.
+Über diesen kann nun Flowgorithm genutzt werden.
+
+*** Speichern von Programmen
+In Flowgorithm erstellte Programme müssen im Ordner /Documents/ gespeichert werden.
+Dann erscheinen diese im Explorer des Codespaces und können von dort aus heruntergeladen werden.
+
+*** Beenden des Flowgorithm-Containers
+Bei eventuellen Problemen kann der Flowgorithm-Container gestoppt werden:
+#+begin_src bash
+./shutdown
+#+end_src
+Anschließend lässt er sich wieder auf die übliche Weise starten.
